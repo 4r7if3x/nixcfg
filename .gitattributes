@@ -1,0 +1,18 @@
+*               text eol=lf
+.*              text eol=lf
+
+*.png           binary
+*.jpg           binary
+*.ttf           binary
+*.otf           binary
+
+*.md            diff=markdown
+*.mrconfig      linguist-language=ini diff=ini
+.*rc            linguist-detectable linguist-language=bash diff=bash
+.git*           linguist-detectable linguist-language=ini diff=ini
+*.conf          linguist-detectable linguist-language=ini diff=ini
+/**/config      linguist-detectable linguist-language=ini diff=ini
+*.json          linguist-detectable
+
+/.github        export-ignore
+/docs           export-ignore
